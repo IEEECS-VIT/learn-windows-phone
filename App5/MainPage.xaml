@@ -1,0 +1,77 @@
+﻿<Page
+    x:Class="App5.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App5"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Background>
+
+        <ImageBrush ImageSource="Assets/back.png" Stretch="Fill"/>
+
+    </Page.Background>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+
+        </Grid.RowDefinitions>
+        
+        
+       <!-- <Button Grid.Row="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/ieee.png" Stretch="Fill">
+
+               </ImageBrush>
+            </Button.Background>
+       </Button>
+        -->
+
+        <Image Source="Assets/ieee.png" Grid.Row="0"></Image>
+
+        <Button Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/meet.png" Stretch="Fill">
+
+                </ImageBrush>
+            </Button.Background>
+        </Button>
+
+        <Button x:Name="announcement" Grid.Row="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="announcement_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/announcement.png" Stretch="Fill">
+
+                </ImageBrush>
+            </Button.Background>
+        </Button>
+
+        <Grid Grid.Row="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="Button_Click_1">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/events.png" Stretch="Fill">
+
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Button x:Name="aboutUs" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="aboutUs_Click">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/about.png" Stretch="Fill">
+
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+        </Grid>
+        
+
+    </Grid>
+</Page>
